@@ -1,5 +1,244 @@
-template-repository (1.0-1) unstable; urgency=medium
+direnv (2.32.1-2) unstable; urgency=medium
 
-  * Initial release
+  * debian: manpages: Include direnv.toml.1 (Closes: #1022208)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Punit Agrawal <punit@debian.org>  Sat, 22 Oct 2022 08:44:45 +0100
+
+direnv (2.32.1-1) unstable; urgency=medium
+
+  * debian/watch: Fix the matching regular expression
+  * Update standards version to 4.6.0
+  * debian: Update list of manpages to install
+  * debian/control: Annotate test dependencies with nocheck profile
+  * debian/control: Bump debhelper-compat to 13
+  * debian/rules: Migrate to using dh-golang
+  * New upstream version 2.32.1 (Closes: #997509)
+  * debian/patches: Refresh patches for new upstream version 2.32.1
+  * debian: manpages: Drop direnv-toml manpage
+  * debian/control: Add build dependencies due to devendoring
+  * debian/rules: Make artifacts available during build
+  * debian/rules: Re-enable tests
+  * debian/control: Drop go-md2man dependency
+
+ -- Punit Agrawal <punit@debian.org>  Mon, 18 Jul 2022 00:09:09 +0100
+
+direnv (2.25.2-2) unstable; urgency=medium
+
+  * Update elvish tests (Closes: #982709)
+
+ -- Punit Agrawal <punit@debian.org>  Sun, 21 Feb 2021 12:11:48 +0900
+
+direnv (2.25.2-1) unstable; urgency=medium
+
+  * New upstream version 2.25.2
+  * Include upstream changelog in the package
+
+ -- Punit Agrawal <punit@debian.org>  Mon, 14 Dec 2020 20:50:34 +0900
+
+direnv (2.23.1-1) unstable; urgency=medium
+
+  * New upstream version 2.23.1
+
+ -- Punit Agrawal <punit@debian.org>  Mon, 26 Oct 2020 23:14:04 +0900
+
+direnv (2.21.3-1) unstable; urgency=medium
+
+  * New upstream version 2.21.3
+  * Drop patches merged upstream
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 16 May 2020 09:46:40 +0900
+
+direnv (2.21.2-1) unstable; urgency=medium
+
+  * New upstream version 2.21.2
+  * Drop setting GOPATH during package build
+  * Enable verbose output during build
+  * Fix shellcheck warnings
+  * Disable golangci-lint for package builds
+  * Fix elvish test failures (Closes: #952168)
+  * Update Standards-Version to 4.5.0
+  * Set HOME during testing
+
+ -- Punit Agrawal <punit@debian.org>  Mon, 24 Feb 2020 15:38:17 +0900
+
+direnv (2.20.1-2) unstable; urgency=medium
+
+  * Explicitly specify GOCACHE to build with Go 1.12
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 17 Aug 2019 00:01:56 +0900
+
+direnv (2.20.1-1) unstable; urgency=medium
+
+  * New upstream version 2.20.1
+  * Refresh patches for new release
+  * Escape grep arguments in stdlib.sh
+  * Update build dependencies - tcsh, zsh
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 20 Jul 2019 07:30:26 +0900
+
+direnv (2.18.2-2) unstable; urgency=medium
+
+  * Add ruby as a dependency
+  * Include upstream provided docs
+  * Update standards version to 4.3.0
+  * Force testing to be single threaded
+
+ -- Punit Agrawal <punit@debian.org>  Sun, 30 Dec 2018 18:20:20 +0900
+
+direnv (2.18.2-1) unstable; urgency=medium
+
+  * New upstream version 2.18.2
+  * Update build dependincies
+  * Update patch queue for 2.18.2
+
+ -- Punit Agrawal <punit@debian.org>  Thu, 27 Dec 2018 19:40:02 +0900
+
+direnv (2.17.0-1) unstable; urgency=medium
+
+  * New upstream version 2.17.0
+  * Drop build dependency on elvish
+  * Update Standards-Version to 4.1.4
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 07 Jul 2018 07:23:00 +0100
+
+direnv (2.15.2-1) unstable; urgency=medium
+
+  * New upstream version 2.15.2
+  * Drop patches merged upstream
+  * Update package repository location
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 03 Mar 2018 11:33:21 +0000
+
+direnv (2.15.0-1) unstable; urgency=medium
+
+  * New upstream version 2.15.0
+  * Refresh fix with patch from upstream
+  * Fix lintian warnings arising from upstream version 2.15.0
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 24 Feb 2018 19:39:41 +0000
+
+direnv (2.14.0-2) unstable; urgency=medium
+
+  * Fix build failure with golang-1.10 (Closes: #890852)
+  * Update standards version to 4.1.3
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 24 Feb 2018 08:38:01 +0000
+
+direnv (2.14.0-1) unstable; urgency=medium
+
+  * New upstream version 2.14.0
+
+ -- Punit Agrawal <punit@debian.org>  Sun, 31 Dec 2017 11:16:57 +0000
+
+direnv (2.13.1-2) unstable; urgency=medium
+
+  * Revert the use of golang package buildsystem
+  * Re-enable package tests
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 07 Oct 2017 16:54:36 +0100
+
+direnv (2.13.1-1) unstable; urgency=medium
+
+  * New upstream version 2.13.1
+  * Disable tests
+  * Update standards version to 4.1.1
+
+ -- Punit Agrawal <punit@debian.org>  Fri, 06 Oct 2017 21:51:58 +0100
+
+direnv (2.12.2-1) unstable; urgency=medium
+
+  * New upstream version 2.12.2
+  * Migrate package to using golang buildsystem
+  * Update debhelper to version 10.0.0
+  * Drop Makefile patch to respect PREFIX
+
+ -- Punit Agrawal <punit@debian.org>  Mon, 28 Aug 2017 10:12:06 +0100
+
+direnv (2.11.3-1) unstable; urgency=medium
+
+  * New upstream version 2.11.3
+  * Update to standards version 4.0.0
+  * Update maintainer email
+
+ -- Punit Agrawal <punit@debian.org>  Sat, 24 Jun 2017 18:06:47 +0100
+
+direnv (2.10.0-2) unstable; urgency=medium
+
+  * Add go-md2man as dependency
+  * Enable building manpages
+  * Fix lintian warning in manpage
+  * Update package repository location
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Sun, 08 Jan 2017 19:21:10 +0000
+
+direnv (2.10.0-1) unstable; urgency=medium
+
+  * New upstream version 2.10.0
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Wed, 14 Dec 2016 07:18:22 +0000
+
+direnv (2.9.0-1) unstable; urgency=medium
+
+  * Fix watch file regular expression
+  * Update standards compliance to 3.9.8
+  * Use secure url for gitweb access to repo
+  * Imported Upstream version 2.9.0
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Sat, 27 Aug 2016 09:13:30 +0100
+
+direnv (2.8.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.8.1
+  * Drop lintian spelling fix that is merged upstream
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Thu, 07 Apr 2016 09:38:57 +0100
+
+direnv (2.7.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.7.0
+  * Drop fix to 'dump' test that is merged upstream
+  * Update release location
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Sun, 18 Oct 2015 12:54:12 +0100
+
+direnv (2.6.1-2) unstable; urgency=medium
+
+  * Fix error while nocheck buildpackage
+  * Fix testcase to correctly inherit environment in new shell
+  * Fix lintian spelling warning
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Thu, 23 Jul 2015 17:39:14 +0200
+
+direnv (2.6.1-1) unstable; urgency=medium
+
+  * Skip broken test "dump"
+  * Imported upstream version 2.6.1
+  * Remove override statically-linked-binary as it is no longer required
+  * Update Standards Version to 3.9.6
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Tue, 14 Jul 2015 10:46:17 +0100
+
+direnv (2.4.0-2) unstable; urgency=medium
+
+  * Override dh_auto_test to set a writable $HOME (Closes: #756963)
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Sat, 27 Sep 2014 12:32:20 +0100
+
+direnv (2.4.0-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.4.0
+  * Update patches
+  * Drop patches that are already in upstream
+  * Override lintian error - statically linked binary
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Tue, 17 Jun 2014 22:10:24 +0100
+
+direnv (2.3.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #743887: ITP: direnv -- A utility to set
+    directory specific environment variables)
+  * Update Makefile to respect PREFIX in addition to DESTDIR
+  * Update Makefile to skip installing man pages
+  * Fix typo in upstream
+
+ -- Punit Agrawal <punitagrawal@gmail.com>  Sun, 27 Apr 2014 23:04:40 +0100
